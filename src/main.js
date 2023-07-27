@@ -8,6 +8,10 @@ import './assets/css/global.css';
 // 导入字体图标
 import './assets/fonts/iconfont.css';
 
+// 导入树形表格插件
+import TreeTable from 'vue-table-with-tree-grid'
+
+
 // 全局配置axios
 import axios from 'axios';
 // 配置请求根路径
@@ -19,7 +23,9 @@ axios.interceptors.request.use(config => {
 });
 Vue.prototype.$http = axios;
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+// 注册全局可用组件
+Vue.component('tree-table', TreeTable);
 
 new Vue({
   router,

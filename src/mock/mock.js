@@ -42,7 +42,7 @@ export const menuList = {
         },{
             id: 213, 
             authName: '商品分类',
-            path: 'goods',
+            path: 'categories',
             children: [],
         }],
     },{
@@ -381,3 +381,505 @@ export const rolesListMockData = {
         }]
     }]
 };
+
+// 商品分类列表
+export const cateListMockData = {
+    data: [{
+        cate_id: 1,
+        cate_name: '大家电',
+        pid: 0,
+        cate_level: 0,
+        cate_deleted: false,
+        children: [{
+            cate_id: 1-1,
+            cate_name: '电视',
+            pid: 1,
+            cate_level: 1,
+            cate_deleted: false,
+            children: [{
+                cate_id: 1-1-1,
+                cate_name: '曲面电视',
+                pid: 1-1,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-1-2,
+                cate_name: '海信',
+                pid: 1-1,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-1-3,
+                cate_name: '夏普',
+                pid: 1-1,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-1-4,
+                cate_name: 'TCL',
+                pid: 1-1,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-1-5,
+                cate_name: '小米',
+                pid: 1-1,
+                cate_level: 2,
+                cate_deleted: false,
+            }]
+        },{
+            cate_id: 1-2,
+            cate_name: '空调',
+            pid: 1,
+            cate_level: 1,
+            cate_deleted: false,
+            children: [{
+                cate_id: 1-2-1,
+                cate_name: 'media',
+                pid: 1-2,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-2-2,
+                cate_name: '格力空调',
+                pid: 1-2,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-2-3,
+                cate_name: '海尔',
+                pid: 1-2,
+                cate_level: 2,
+                cate_deleted: false,
+            }]
+        },{
+            cate_id: 1-3,
+            cate_name: '洗衣机',
+            pid: 1,
+            cate_level: 1,
+            cate_deleted: false,
+            children: [{
+                cate_id: 1-3-1,
+                cate_name: 'media',
+                pid: 1-3,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-3-2,
+                cate_name: '格力空调',
+                pid: 1-3,
+                cate_level: 2,
+                cate_deleted: false,
+            },{
+                cate_id: 1-3-3,
+                cate_name: '海尔',
+                pid: 1-3,
+                cate_level: 2,
+                cate_deleted: false,
+            }]
+        }, {
+            cate_id: 1-4,
+            cate_name: '冰箱',
+            pid: 1,
+            cate_level: 1,
+            cate_deleted: false,
+        }]
+    }, {
+        cate_id: 2,
+        cate_name: '热门推荐',
+        pid: 0,
+        cate_level: 0,
+        cate_deleted: false,
+        children: [{
+
+        }]
+    }, {
+        cate_id: 3,
+        cate_name: '海外购',
+        pid: 0,
+        cate_level: 0,
+        cate_deleted: false,
+        children: [{
+
+        }]
+    },{
+        cate_id: 4,
+        cate_name: '苏宁房产',
+        pid: 0,
+        cate_level: 0,
+        cate_deleted: false,
+        children: [{
+
+        }]
+    },{
+        cate_id: 5,
+        cate_name: '手机相机',
+        pid: 0,
+        cate_level: 0,
+        cate_deleted: false,
+        children: [{
+            cate_id: 5-1,
+            cate_name: 'Apple',
+            pid: 5,
+            cate_level: 1,
+            cate_deleted: false,
+        }, {
+            cate_id: 5-2,
+            cate_name: '小米',
+            pid: 5,
+            cate_level: 1,
+            cate_deleted: false,
+        }, {
+            cate_id: 5-3,
+            cate_name: '华为',
+            pid: 5,
+            cate_level: 1,
+            cate_deleted: false,
+        }, {
+            cate_id: 5-4,
+            cate_name: '尼康',
+            pid: 5,
+            cate_level: 1,
+            cate_deleted: false,
+        }]
+    }]
+}
+// test 
+export const testTreeData = {
+    data: [{
+        name: 'Jack',
+        sex: 'male',
+        likes: ['football', 'basketball'],
+        score: 10,
+        children: [
+          {
+            name: 'Ashley',
+            sex: 'female',
+            likes: ['football', 'basketball'],
+            score: 20,
+            children: [
+              {
+                name: 'Ashley',
+                sex: 'female',
+                likes: ['football', 'basketball'],
+                score: 20,
+              },
+              {
+                name: 'Taki',
+                sex: 'male',
+                likes: ['football', 'basketball'],
+                score: 10,
+                children: [
+                  {
+                    name: 'Ashley',
+                    sex: 'female',
+                    likes: ['football', 'basketball'],
+                    score: 20,
+                  },
+                  {
+                    name: 'Taki',
+                    sex: 'male',
+                    likes: ['football', 'basketball'],
+                    score: 10,
+                    children: [
+                      {
+                        name: 'Ashley',
+                        sex: 'female',
+                        likes: ['football', 'basketball'],
+                        score: 20,
+                      },
+                      {
+                        name: 'Taki',
+                        sex: 'male',
+                        likes: ['football', 'basketball'],
+                        score: 10,
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            name: 'Taki',
+            sex: 'male',
+            likes: ['football', 'basketball'],
+            score: 10,
+          },
+        ],
+      },
+      {
+        name: 'Tom',
+        sex: 'male',
+        likes: ['football', 'basketball'],
+        score: 20,
+        children: [
+          {
+            name: 'Ashley',
+            sex: 'female',
+            likes: ['football', 'basketball'],
+            score: 20,
+            children: [
+              {
+                name: 'Ashley',
+                sex: 'female',
+                likes: ['football', 'basketball'],
+                score: 20,
+              },
+              {
+                name: 'Taki',
+                sex: 'male',
+                likes: ['football', 'basketball'],
+                score: 10,
+              },
+            ],
+          },
+          {
+            name: 'Taki',
+            sex: 'male',
+            likes: ['football', 'basketball'],
+            score: 10,
+            children: [
+              {
+                name: 'Ashley',
+                sex: 'female',
+                likes: ['football', 'basketball'],
+                score: 20,
+              },
+              {
+                name: 'Taki',
+                sex: 'male',
+                likes: ['football', 'basketball'],
+                score: 10,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: 'Tom',
+        sex: 'male',
+        likes: ['football', 'basketball'],
+        score: 20,
+      },
+      {
+        name: 'Tom',
+        sex: 'male',
+        likes: ['football', 'basketball'],
+        score: 20,
+        children: [
+          {
+            name: 'Ashley',
+            sex: 'female',
+            likes: ['football', 'basketball'],
+            score: 20,
+          },
+          {
+            name: 'Taki',
+            sex: 'male',
+            likes: ['football', 'basketball'],
+            score: 10,
+          },
+        ],
+      },
+    ]
+}
+
+// 父级分类
+export const parentCateListMockData = {
+    data: [{
+        value: 'zhinan',
+        label: '指南',
+        children: [{
+          value: 'shejiyuanze',
+          label: '设计原则',
+          children: [{
+            value: 'yizhi',
+            label: '一致'
+          }, {
+            value: 'fankui',
+            label: '反馈'
+          }, {
+            value: 'xiaolv',
+            label: '效率'
+          }, {
+            value: 'kekong',
+            label: '可控'
+          }]
+        }, {
+          value: 'daohang',
+          label: '导航',
+          children: [{
+            value: 'cexiangdaohang',
+            label: '侧向导航'
+          }, {
+            value: 'dingbudaohang',
+            label: '顶部导航'
+          }]
+        }]
+      }, {
+        value: 'zujian',
+        label: '组件',
+        children: [{
+          value: 'basic',
+          label: 'Basic',
+          children: [{
+            value: 'layout',
+            label: 'Layout 布局'
+          }, {
+            value: 'color',
+            label: 'Color 色彩'
+          }, {
+            value: 'typography',
+            label: 'Typography 字体'
+          }, {
+            value: 'icon',
+            label: 'Icon 图标'
+          }, {
+            value: 'button',
+            label: 'Button 按钮'
+          }]
+        }, {
+          value: 'form',
+          label: 'Form',
+          children: [{
+            value: 'radio',
+            label: 'Radio 单选框'
+          }, {
+            value: 'checkbox',
+            label: 'Checkbox 多选框'
+          }, {
+            value: 'input',
+            label: 'Input 输入框'
+          }, {
+            value: 'input-number',
+            label: 'InputNumber 计数器'
+          }, {
+            value: 'select',
+            label: 'Select 选择器'
+          }, {
+            value: 'cascader',
+            label: 'Cascader 级联选择器'
+          }, {
+            value: 'switch',
+            label: 'Switch 开关'
+          }, {
+            value: 'slider',
+            label: 'Slider 滑块'
+          }, {
+            value: 'time-picker',
+            label: 'TimePicker 时间选择器'
+          }, {
+            value: 'date-picker',
+            label: 'DatePicker 日期选择器'
+          }, {
+            value: 'datetime-picker',
+            label: 'DateTimePicker 日期时间选择器'
+          }, {
+            value: 'upload',
+            label: 'Upload 上传'
+          }, {
+            value: 'rate',
+            label: 'Rate 评分'
+          }, {
+            value: 'form',
+            label: 'Form 表单'
+          }]
+        }, {
+          value: 'data',
+          label: 'Data',
+          children: [{
+            value: 'table',
+            label: 'Table 表格'
+          }, {
+            value: 'tag',
+            label: 'Tag 标签'
+          }, {
+            value: 'progress',
+            label: 'Progress 进度条'
+          }, {
+            value: 'tree',
+            label: 'Tree 树形控件'
+          }, {
+            value: 'pagination',
+            label: 'Pagination 分页'
+          }, {
+            value: 'badge',
+            label: 'Badge 标记'
+          }]
+        }, {
+          value: 'notice',
+          label: 'Notice',
+          children: [{
+            value: 'alert',
+            label: 'Alert 警告'
+          }, {
+            value: 'loading',
+            label: 'Loading 加载'
+          }, {
+            value: 'message',
+            label: 'Message 消息提示'
+          }, {
+            value: 'message-box',
+            label: 'MessageBox 弹框'
+          }, {
+            value: 'notification',
+            label: 'Notification 通知'
+          }]
+        }, {
+          value: 'navigation',
+          label: 'Navigation',
+          children: [{
+            value: 'menu',
+            label: 'NavMenu 导航菜单'
+          }, {
+            value: 'tabs',
+            label: 'Tabs 标签页'
+          }, {
+            value: 'breadcrumb',
+            label: 'Breadcrumb 面包屑'
+          }, {
+            value: 'dropdown',
+            label: 'Dropdown 下拉菜单'
+          }, {
+            value: 'steps',
+            label: 'Steps 步骤条'
+          }]
+        }, {
+          value: 'others',
+          label: 'Others',
+          children: [{
+            value: 'dialog',
+            label: 'Dialog 对话框'
+          }, {
+            value: 'tooltip',
+            label: 'Tooltip 文字提示'
+          }, {
+            value: 'popover',
+            label: 'Popover 弹出框'
+          }, {
+            value: 'card',
+            label: 'Card 卡片'
+          }, {
+            value: 'carousel',
+            label: 'Carousel 走马灯'
+          }, {
+            value: 'collapse',
+            label: 'Collapse 折叠面板'
+          }]
+        }]
+      }, {
+        value: 'ziyuan',
+        label: '资源',
+        children: [{
+          value: 'axure',
+          label: 'Axure Components'
+        }, {
+          value: 'sketch',
+          label: 'Sketch Templates'
+        }, {
+          value: 'jiaohu',
+          label: '组件交互文档'
+        }]
+      }]
+}
