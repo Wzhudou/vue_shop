@@ -37,7 +37,7 @@ export const menuList = {
         },{
             id: 212, 
             authName: '分类参数',
-            path: 'category',
+            path: 'params',
             children: [],
         },{
             id: 213, 
