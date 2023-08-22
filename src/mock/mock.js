@@ -883,3 +883,181 @@ export const parentCateListMockData = {
         }]
       }]
 }
+
+export const goodsListMockData = {
+  data: [{
+    goods_id: 0,
+    cat_id: null,
+    goods_name: '海外购自营',
+    goods_price: 1399,
+    goods_number: 1,
+    goods_weight: 100,
+    goods_state: null,
+    add_time: 1514345477,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 1,
+    cat_id: null,
+    goods_name: '卡奇莱德汽车车载',
+    goods_price: 168,
+    goods_number: 1,
+    goods_weight: 100,
+    goods_state: null,
+    add_time: 1514259452,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 2,
+    cat_id: null,
+    goods_name: '沿途(yantu)车载充电器车充一拖二转接口手机只能头多功能汽车点烟器',
+    goods_price: 0,
+    goods_number: 1,
+    goods_weight: 100,
+    goods_state: null,
+    add_time: 1514259448,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 3,
+    cat_id: null,
+    goods_name: '车载冰箱7.5L冷暖两用汽车冰箱半导体12V迷你电冰箱升级款',
+    goods_price: 149,
+    goods_number: 1,
+    goods_weight: 100,
+    goods_state: null,
+    add_time: 1514259455,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 4,
+    cat_id: null,
+    goods_name: '神行者电子狗 神行者L70电子狗测速 厕所雷达 流动测速 多重警示路段提醒',
+    goods_price: 98,
+    goods_number: 1,
+    goods_weight: 100,
+    goods_state: null,
+    add_time: 1514259442,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 5,
+    cat_id: null,
+    goods_name: '360行车记录仪尊享升级版J501C安霸A12 高清也是 WIFI连接 只能管理 机卡套装 黑色（存储卡品牌随机）',
+    goods_price: 1209,
+    goods_number: 1,
+    goods_weight: 100,
+    goods_state: null,
+    add_time: 1514259438,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 6,
+    cat_id: null,
+    goods_name: '淘而杰汽车专用伸缩蜡拖 除尘车掸子擦车拖把 汽车蜡刷清洁工具',
+    goods_price: 100,
+    goods_number: 1,
+    goods_weight: 100,
+    goods_state: null,
+    add_time: 1514259435,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 7,
+    cat_id: null,
+    goods_name: '保赐利(botny)防',
+    goods_price: 198,
+    goods_number: 1,
+    goods_weight: 1,
+    goods_state: null,
+    add_time: 1514259432,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 8,
+    cat_id: null,
+    goods_name: '龟牌硬壳蜡新汽车防',
+    goods_price: 3021,
+    goods_number: 1,
+    goods_weight: 1,
+    goods_state: null,
+    add_time: 1514259429,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  },{
+    goods_id: 9,
+    cat_id: null,
+    goods_name: '点缤汽车车漆划痕修',
+    goods_price: 1534,
+    goods_number: 1,
+    goods_weight: 1,
+    goods_state: null,
+    add_time: 1514259426,
+    upt_time: 1512954923,
+    hot_number: 0,
+    is_promote: false,
+  }]
+}
+
+// 添加商品基本信息
+export const addGoodsMockData = {
+  data: [{
+      attr_id: 0,
+      attr_name: '版式',
+      attr_sel: 'many',
+      attr_write: 'manual',
+      attr_vals: '49寸4k超薄曲面 人工智能,55寸4k观影曲面 30核HDR,55寸4k超薄曲面 人工智能,65寸4k超薄曲面 人工智能'
+  },{
+      attr_id: 1,
+      attr_name: '颜色',
+      attr_sel: 'many',
+      attr_write: 'manual',
+      attr_vals: '黄色 黑色',
+  }],
+  only: [{
+      attr_id: 1,
+      attr_name: '主体-商品名称',
+      attr_sel: 'only',
+      attr_write: 'manual',
+      attr_vals: 'TCL电视55A950C'
+  },{
+      attr_id: 2,
+      attr_name: '显示-曲面',
+      attr_sel: 'only',
+      attr_write: 'manual',
+      attr_vals: '是'
+  },{
+      attr_id: 3,
+      attr_name: '系统-智能电视',
+      attr_sel: 'only',
+      attr_write: 'manual',
+      attr_vals: '智能电视'
+  },{
+      attr_id: 4,
+      attr_name: '外观挂壁显示',
+      attr_sel: 'only',
+      attr_write: 'manual',
+      attr_vals: '支持'
+  },{
+      attr_id: 5,
+      attr_name: '功能-整机功率(W)',
+      attr_sel: 'only',
+      attr_write: 'manual',
+      attr_vals: '120瓦特'
+  },{
+    attr_id: 6,
+    attr_name: '端口-模拟RF接口',
+    attr_sel: 'only',
+    attr_write: 'manual',
+    attr_vals: 'fffff'
+}],
+};
